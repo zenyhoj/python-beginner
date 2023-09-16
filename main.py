@@ -21,6 +21,7 @@ def days_to_units(num_of_days):
 
 # using a try/except block to catch errors
 def validate_execute():  # encapsulating the validation logic by putting all in the function
+
     try:
         user_input_number = int(user_input)  # converts the user_input into a number
         if user_input_number > 0:
@@ -37,5 +38,6 @@ def validate_execute():  # encapsulating the validation logic by putting all in 
 
 user_input = ""  # initialized the user_input to suppress the error
 while user_input != "exit":  # continue asking for input until the user types exit word
+    print("----------------------------------------------------------")
     user_input = input("Please provide a number of days to convert to hours \n")
     validate_execute()
